@@ -21,7 +21,8 @@ public class CrazyDuck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (transform.position.y < -1)
+            transform.position = Vector3.up * 1;
     }
 
     void OnCollisionEnter(Collision collision)

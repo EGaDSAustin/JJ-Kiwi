@@ -137,7 +137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5645572634245716605, guid: 771b79fd85a70a0428248334a3448056, type: 3}
       propertyPath: loadScene
-      value: 
+      value: LongHallway
       objectReference: {fileID: 0}
     - target: {fileID: 7928033454056621210, guid: 771b79fd85a70a0428248334a3448056, type: 3}
       propertyPath: m_LocalPosition.x
@@ -556,7 +556,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5645572634245716605, guid: 771b79fd85a70a0428248334a3448056, type: 3}
       propertyPath: loadScene
-      value: 
+      value: DarkScene
       objectReference: {fileID: 0}
     - target: {fileID: 7928033454056621210, guid: 771b79fd85a70a0428248334a3448056, type: 3}
       propertyPath: m_LocalPosition.x
@@ -617,7 +617,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5645572634245716605, guid: 771b79fd85a70a0428248334a3448056, type: 3}
       propertyPath: loadScene
-      value: 
+      value: Maze
       objectReference: {fileID: 0}
     - target: {fileID: 7928033454056621210, guid: 771b79fd85a70a0428248334a3448056, type: 3}
       propertyPath: m_LocalPosition.x
