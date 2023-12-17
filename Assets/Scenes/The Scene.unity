@@ -865,6 +865,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom
       objectReference: {fileID: 0}
+    - target: {fileID: 2481624309330080689, guid: cbdbde781a1c86d4b8e537b6594ef028, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 5460154368910206191, guid: cbdbde781a1c86d4b8e537b6594ef028, type: 3}
       propertyPath: crosshair
       value: 
