@@ -10,7 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2000680179147822517}
   - component: {fileID: 418905702512608061}
-  m_Layer: 0
+  - component: {fileID: 6656867030808624525}
+  - component: {fileID: 7365881876194935597}
+  m_Layer: 3
   m_Name: Penguin Winging Statue
   m_TagString: Doodad
   m_Icon: {fileID: 0}
@@ -45,12 +47,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c66d83c1cc75fa148a372f05b723e68c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 10
+  value: 1
   materials:
   - {fileID: 2100000, guid: a0314d17c49eec9478e6793a8fb5636d, type: 2}
   - {fileID: 2100000, guid: 7e0c2d8996aa2d34b9d421937ed4d373, type: 2}
   - {fileID: 2100000, guid: 8d14ff3068884b74c8fe79e1cf9159d0, type: 2}
+  - {fileID: 2100000, guid: 443fa188217ffa640b71ae2441e71c7e, type: 2}
+  onDisplay: 0
+  claimed: 0
   isPickedup: 0
+--- !u!54 &6656867030808624525
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4855906363159244843}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!136 &7365881876194935597
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4855906363159244843}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.41, y: 1, z: 0.17}
 --- !u!1 &6746598798266049824
 GameObject:
   m_ObjectHideFlags: 0
@@ -80,7 +135,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: -0.1, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.333, y: 0.333, z: 0.333}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2000680179147822517}
@@ -152,7 +207,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30

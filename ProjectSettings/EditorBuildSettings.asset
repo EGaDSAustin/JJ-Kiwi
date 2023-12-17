@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/The Scene.unity
     guid: aadf4b7c69d6d644687d36edffe0b269
+  - enabled: 1
+    path: Assets/Scenes/FunWithPhysics.unity
+    guid: ba733cb7971189041a323bad2c060787
   m_configObjects: {}

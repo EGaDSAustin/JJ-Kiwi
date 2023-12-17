@@ -9,7 +9,7 @@ public class PlayerDooer : MonoBehaviour
     public LayerMask doodad;
     public GameObject playerHand;
 
-    private Doodad heldDoodad;
+    public Doodad heldDoodad;
 
     private void Update()
     {
@@ -32,7 +32,7 @@ public class PlayerDooer : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, pickupDistance, doodad))
         {
-            Doodad doodad = hit.collider.transform.parent.GetComponent<Doodad>();
+            Doodad doodad = hit.collider.transform.GetComponent<Doodad>();
             if (doodad != null)
             {
                 doodad.PickUp(playerHand.transform);
