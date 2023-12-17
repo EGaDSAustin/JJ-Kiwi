@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.10000001, z: 0.10000001}
+  m_LocalScale: {x: 0.333, y: 0.333, z: 0.333}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 8328155316518997150}
@@ -101,7 +101,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -116,7 +116,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8328155316518997150}
   - component: {fileID: 954794236714164631}
-  m_Layer: 0
+  - component: {fileID: 8800684499632589454}
+  - component: {fileID: 3136825108221092481}
+  m_Layer: 3
   m_Name: Baby Penguin Statue
   m_TagString: Doodad
   m_Icon: {fileID: 0}
@@ -151,9 +153,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c66d83c1cc75fa148a372f05b723e68c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 10
+  value: 0
   materials:
   - {fileID: 2100000, guid: a0314d17c49eec9478e6793a8fb5636d, type: 2}
   - {fileID: 2100000, guid: 7e0c2d8996aa2d34b9d421937ed4d373, type: 2}
   - {fileID: 2100000, guid: 8d14ff3068884b74c8fe79e1cf9159d0, type: 2}
+  - {fileID: 2100000, guid: 443fa188217ffa640b71ae2441e71c7e, type: 2}
+  onDisplay: 0
+  claimed: 0
   isPickedup: 0
+--- !u!54 &8800684499632589454
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4358028688323700815}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!136 &3136825108221092481
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4358028688323700815}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2.5
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.3, z: 0}
