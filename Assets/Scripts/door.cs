@@ -26,7 +26,10 @@ public class door : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        ObjectManager.saveCarryingObj();
-        SceneManager.LoadScene(loadScene);
+        if (other.gameObject.CompareTag("Player"))
+        {
+            ObjectManager.saveCarryingObj();
+            SceneManager.LoadScene(loadScene);
+        }
     }
 }
