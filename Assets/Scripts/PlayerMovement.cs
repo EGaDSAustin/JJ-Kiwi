@@ -45,6 +45,11 @@ public class Movement : MonoBehaviour
         float speed = Input.GetKey(KeyCode.LeftShift) ? sprintSpeed : moveSpeed;
 
         Vector3 movement = (transform.right * horizontal + transform.forward * vertical).normalized;
-        rb.MovePosition(rb.position + movement * speed * Time.deltaTime); // very bad
+        rb.velocity = new Vector3((movement * speed).x, rb.velocity.y, (movement * speed).z);
+
+        if (Input.GetKeyDown(KeyCode.Space) && Physics.Raycast(new Ray(transform.position, Vector3.down), 1.1f, 1 << 0))
+            rb.velocity += Vector3.up * 5;
+
+        //rb.MovePosition(rb.position + movement * speed * Time.deltaTime); // very bad
     }
 }
