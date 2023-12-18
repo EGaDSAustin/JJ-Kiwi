@@ -333,7 +333,7 @@ MonoBehaviour:
   moveSpeed: 5
   sprintSpeed: 10
   JumpForce: 4
-  ContinuousJumpForce: 0.5
+  ContinuousJumpForce: 0.4
   FallForce: 0.3
   JumpTime: 0.25
 --- !u!114 &5460154368910206191

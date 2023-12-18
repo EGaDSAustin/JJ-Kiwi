@@ -98,7 +98,6 @@ public class Movement : MonoBehaviour
 
     private void ContinuousJump() 
     {
-        Debug.Log("Applying continuous jump force");
         rb.velocity += Vector3.up * ContinuousJumpForce;
     }
 
@@ -115,9 +114,7 @@ public class Movement : MonoBehaviour
 
     IEnumerator StopContinuousJump(float jumpTime) 
     {
-        Debug.Log("Stopping continuous jump force routine started");
         yield return new WaitForSeconds(jumpTime);
-        Debug.Log("Stopping continuous jump force");
         isJumping = false;
     }
 }
