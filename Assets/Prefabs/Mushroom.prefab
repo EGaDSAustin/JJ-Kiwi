@@ -330,8 +330,12 @@ MonoBehaviour:
   head: {fileID: 3067575414598101377}
   rb: {fileID: 2481624309330080689}
   lookSpeed: 5
-  moveSpeed: 2.5
-  sprintSpeed: 5
+  moveSpeed: 5
+  sprintSpeed: 10
+  JumpForce: 4
+  ContinuousJumpForce: 0.5
+  FallForce: 0.3
+  JumpTime: 0.25
 --- !u!114 &5460154368910206191
 MonoBehaviour:
   m_ObjectHideFlags: 0

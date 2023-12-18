@@ -680,13 +680,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1986461100464496717, guid: cbdbde781a1c86d4b8e537b6594ef028, type: 3}
+      propertyPath: JumpTime
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986461100464496717, guid: cbdbde781a1c86d4b8e537b6594ef028, type: 3}
+      propertyPath: JumpForce
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986461100464496717, guid: cbdbde781a1c86d4b8e537b6594ef028, type: 3}
+      propertyPath: ContinuousJumpForce
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1987742171882603214, guid: cbdbde781a1c86d4b8e537b6594ef028, type: 3}
       propertyPath: m_Name
       value: Mushroom
-      objectReference: {fileID: 0}
-    - target: {fileID: 3643580123275758454, guid: cbdbde781a1c86d4b8e537b6594ef028, type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6178733505407437724, guid: cbdbde781a1c86d4b8e537b6594ef028, type: 3}
       propertyPath: m_LocalPosition.x
@@ -726,14 +734,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6178733505407437724, guid: cbdbde781a1c86d4b8e537b6594ef028, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7368200656127222173, guid: cbdbde781a1c86d4b8e537b6594ef028, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9138230323100479846, guid: cbdbde781a1c86d4b8e537b6594ef028, type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
